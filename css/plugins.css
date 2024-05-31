@@ -1,0 +1,45 @@
+/*-----------------------------------------------------------------------------------
+
+    Theme Name: Crizal - Business and Corporate Template
+    Description: Business and Corporate Template
+    Author: chitrakootweb
+    Version: 1.0
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+			[ All CSS Plugins & Default Classes File ]
+-----------------------------------------------------------------*/
+
+/* == bootstrap == */
+@import url("bootstrap.min.css");
+
+/* == animate css == */
+@import url("animate.css");
+
+/* == font awesome css == */
+@import url("fontawesome-all.min.css");
+
+/* == et-line icon font == */
+@import url("et-line.css");
+
+/* == icon moon == */
+@import url("icomoon.css");
+
+/* == magnific-popup == */
+@import url("magnific-popup.css");
+
+/* == owl.carousel == */
+@import url("owl.carousel.css");
+
+/* == zoom css == */
+@import url("xzoom.css");
+        
+/* == default classes == */
+@import url("default.css");
+
+/* == navigation == */
+@import url("nav-menu.css");
+
+/* == contact form classes == */
+@import url("mailform.css");
