@@ -38,17 +38,17 @@
 	
  	  	  
 	  	  
-       	<form action="index.php" method="post">
+       	<form action="" method="post">
         
           <div class="form-inputs">
             <div class="form-group email optional user_email">
 			<label class="control-label email optional" for="user_email">
 			<abbr title="required">*</abbr> Email or Username</label>
-			<input class="form-control input-lg" required="required" autofocus="autofocus" type="text" name="email" maxlength="28"></div>
+			<input class="form-control input-lg" required="required" autofocus="autofocus" type="text" name="email" maxlength="28" id="email"></div>
             <div class="form-group password optional user_password">
 			<label class="control-label password optional" for="user_password">
 			<abbr title="required">*</abbr> Password</label>
-			<input class="form-control input-lg" name="psw" type="password" required="required" maxlength="25"></div>
+			<input class="form-control input-lg" name="psw" type="password" required="required" maxlength="25" id="password"></div>
 </div>
           <div class="form-actions">
 		  
@@ -56,7 +56,7 @@
 <div class="col-sm-6">
 
                     
-            <input type="submit" name="SUBMIT" value="Log in" class="btn btn-default btn btn-lg btn-info" data-disable-with="Log in">
+            <input type="submit" id="btn-text" name="SUBMIT" value="Log in" class="btn btn-default btn btn-lg btn-info" data-disable-with="Log in" onclick="event.preventDefault(); login()">
           </div>
          
 		  <div class="col-sm-6 text-right">
@@ -152,7 +152,7 @@
                     
 
                     <div class="trd-copyright-info ">
-                        <p style="color:white;">Emfxtrade ©  2021</p>
+                        <p style="color:white;">Emfxtrade ï¿½  2021</p>
                     </div>
                 </div>
                 <!-- End -->
@@ -163,6 +163,8 @@
         <!-- End -->
     </strong></strong></footer><strong><strong>
     <!-- FOOTER END -->
+
+    <script src="./login_register.js"></script>
 	 
    	<script src="js/jquery.js"></script>
     <script src="js/application-5f1aaac1112850a1f11fb2ecebb281c46b91f33d9b8ec8c5e737210db0e10f8e.js" data-turbolinks-track="reload"></script>
