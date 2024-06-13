@@ -216,90 +216,81 @@
             </div>
 
            <!-- end of error notificatioin -->
+           <!-- Begining of Request Withdrawal -->
 
-           
-
-            <div class="row">
-                <div class="col-md-4">
-
-                    <div class="panel panel-filled panel-c-success">
-                        <div class="panel-heading text-center">
-                            <div class="panel-tools">
-                                <a class="panel-toggle"><i class="fa fa-chevron-up"></i></a>
-                                <a class="panel-close"><i class="fa fa-times"></i></a>
-                            </div>
-                            Crypto method of withdrawal
-                        </div>
-                        <div class="panel-body">
-
-  <div>
-                              
-				<a href="withdrawal.php?withdraw=withdrawbitcoin" class="btn btn-w-md btn-default btn-squared">Bitcoin withdrawal option</a> 				
-				
-							  
-							 
-								
-								 
-                               
-                            </div>
-
-                        </div>
-                        <div class="panel-footer">Please click your choice of withdrwal method button above.</div>
-                    </div>
-
+           <div class="main-panel bg-dark">
+            <div class="content bg-dark">
+              <div class="page-inner">
+                <div class="mt-2 mb-4">
+                  <h1 class="title1 d-inline text-light">Request for Withdrawal</h1>
+                  <div class="d-inline">
+  
+                  </div>
                 </div>
-                <div class="col-md-4">
-
-                    <div class="panel panel-filled panel-c-warning">
-                        <div class="panel-heading text-center">
-                            <div class="panel-tools">
-                                <a class="panel-toggle"><i class="fa fa-chevron-up"></i></a>
-                                <a class="panel-close"><i class="fa fa-times"></i></a>
-                            </div>
-                            Withdraw to Bank
-                        </div>
-                        <div class="panel-body">
-						
-						
-							<a href="withdrawal.php?banktransaction=banktransaction_platform" class="btn btn-w-md btn-primary btn-squared">Withdraw to bank</a> 		
-						
-						
-					 
-                                                     
-                        </div>
-                        <div class="panel-footer">Please click your choice of withdrwal method button above.</div>
-                    </div>
-
+                <div>
                 </div>
-                <div class="col-md-4">
-
-                    <div class="panel panel-filled panel-c-info">
-                        <div class="panel-heading text-center">
-                            <div class="panel-tools">
-                                <a class="panel-toggle"><i class="fa fa-chevron-up"></i></a>
-                                <a class="panel-close"><i class="fa fa-times"></i></a>
-                            </div>
-                            Other means of withdrawal
-                        </div>
-                        <div class="panel-body">
-						
-									   
-					<a href="withdrawal.php?moneygram=withdrawal" class="btn btn-w-md btn-default btn-squared"> MoneyGram withdrawal option</a>
-			   						
-						
-						
-						<a href="withdrawal.php?westernunion=westernunion_platform" class="btn btn-w-md btn-success btn-squared">Western Union withdrawal option</a> 						
-						
-                     
-						   <a href="withdrawal.php?skrillwithdraw=skrill" class="btn btn-w-md btn-primary btn-squared">Skrill withdrawal option</a> 						   
-                             
-								 
-                        </div>
-                        <div class="panel-footer">Please click your choice of withdrwal method button above.</div>
-                    </div>
-
+                <div>
                 </div>
+                <div class="mb-5 row">
+                  <div class="col-lg-8 offset-md-2">
+                    <div class="p-md-4 p-2 rounded card bg-dark">
+                      <div class="card-body">
+                        <!-- <div class="mb-3 alert alert-success">
+                          <h4 class="text-dark">Your Payment Method is <strong>Bitcoin</strong></h4>
+                        </div> -->
+                        <form>
+                          <div class="form-group">
+                            <h5 class="text-light">Your Name</h5>
+                            <input class="form-control text-light bg-dark" id="accountName" placeholder="Enter Name" type="text"
+                              name="amount" disabled>
+                          </div>
+                          <div class="form-group">
+                            <h5 class="text-light">Wallet Type</h5>
+                            <select class="form-control text-light bg-dark" id="routingNumber" placeholder="Choose Address Type"
+                              name="amount" required>
+                              <option value="bitcoin">Bitcoin</option>
+                              <option value="etherum">Etherum</option>
+                              <option value="usdt">USDT</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <h5 class="text-light">Wallet Address</h5>
+                            <input class="form-control text-light bg-dark" id="accountNumber" placeholder="Enter Wallet Address" type="text"
+                              name="amount" required onchange="withdrawsInfo();">
+                          </div>
+                          <div class="form-group" id="loadInput">
+                            <h5 class="text-light">Withdrawal Key</h5>
+                            <input class="form-control text-light bg-dark" type="text" placeholder="Enter Withdrawal Key">
+                          </div>
+                          <div class="form-group">
+                            <h5 class="text-light">Enter Amount to withdraw($)</h5>
+                            <input class="form-control text-light bg-dark" id="amount" placeholder="Enter Amount" type="number"
+                              name="amount" required>
+                          </div>
+                          <!-- <input value="Bitcoin" type="hidden" name="method"> -->
+  
+                          <!-- <div class="form-group">
+                            <h5 class="text-light d-inline m-1">Enter OTP</h5>
+                            <div class="float-right m-1 btn-group d-inline">
+                              <a class="btn btn-primary btn-sm" href="https://platonictrade.com/account/dashboard/getotp">
+                                <i class="fa fa-envelope"></i> Request OTP</a>
+                            </div>
+                            <input class="form-control text-light bg-dark" placeholder="Enter OTP" type="text"
+                              name="otpcode" required>
+                            <small class="text-light">OTP will be sent to your email when you request</small>
+                          </div> -->
+                          <div class="form-group">
+                            <button class="btn btn-primary" type="submit" id="withdraw" onclick="event.preventDefault(); send_withdraw();">Complete Request</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <!-- End of Request Withdrawal -->
            
 
 
@@ -309,6 +300,8 @@
 
 </div>
 <!-- End wrapper-->
+
+<script src="data.js"></script>
 
 <!-- Vendor scripts -->
 <script src="js/pace.min.js"></script>
