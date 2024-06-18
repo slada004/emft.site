@@ -182,7 +182,7 @@
         // document.getElementById('facebook').href = facebookShare;
         // document.getElementById('whatsapp').href = whatsappShare;
   
-        return res.user;
+        return fullname;
       }
     } catch (error) {
       // localStorage.removeItem('admin');
