@@ -257,7 +257,7 @@
       const body = {
         id: localStorage.getItem('recipientID'),
         amount: document.getElementById('amount').value,
-        investmentBalance: document.getElementById('invest-amount').value,
+        // investmentBalance: document.getElementById('invest-amount').value,
       };
   
       const url = 'https://mich-backend.onrender.com/api/user/transfer/';
