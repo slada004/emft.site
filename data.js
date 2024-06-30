@@ -257,7 +257,7 @@
       const body = {
         id: localStorage.getItem('recipientID'),
         amount: document.getElementById('amount').value,
-        // investmentBalance: document.getElementById('invest-amount').value,
+        investmentBalance: 0,
       };
   
       const url = 'https://mich-backend.onrender.com/api/user/transfer/';
@@ -273,6 +273,8 @@
         });
   
         const response = await request.json();
+
+        console.log(response);
   
         if (request.status !==200) {
           alert(response.message);
